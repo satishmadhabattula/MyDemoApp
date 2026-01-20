@@ -1,34 +1,15 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" , href="app.component.css">
-</head>
-
-<body>
-
-  <div class="login-container">
-
-    <form (ngSubmit)="onSubmit()">
-
-      <div>
-        <label>Username</label>
-        <input type="text" [(ngModel)]="username" name="username" />
-        <small style="color: red">{{ userError }}</small>
-      </div>
-
-      <div>
-        <label>Password</label>
-        <input type="password" [(ngModel)]="password" name="password" />
-        <small style="color: red">{{ passError }}</small>
-      </div>
-
-    </form>
-    
+<form class="login-container" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Username</label>
+    <input type="text" [(ngModel)]="username" name="username" />
+    <small style="color:red">{{ userError }}</small>
   </div>
 
-  <script src="app.component.ts"></script>
-</body>
+  <div>
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password" name="password" />
+    <small style="color:red">{{ passError }}</small>
+  </div>
 
-</html>
+  <button type="submit">Login</button>
+</form>
