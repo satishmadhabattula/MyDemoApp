@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 6px;
+}
+
+input,
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: #51f076;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 97%;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        width: 80%;
+    }
+}
